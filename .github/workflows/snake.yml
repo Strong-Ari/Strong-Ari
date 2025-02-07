@@ -24,7 +24,7 @@ jobs:
         uses: Platane/snk@v3
         with:
           # GitHub username to generate the animation for
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: "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"
           refresh_hours: 1  # Force refresh every hour to get the latest contributions
           year: 1  # Display contributions from the last 12 months
           # Define the output files and their configurations
@@ -33,7 +33,7 @@ jobs:
             dist/github-snake-dark.svg?palette=github-dark
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: "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"
       # Step 3: Deploy the generated files to the 'output' branch
       - name: Deploy to Output Branch
         uses: peaceiris/actions-gh-pages@v3
