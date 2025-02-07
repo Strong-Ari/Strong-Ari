@@ -26,6 +26,7 @@ jobs:
           # GitHub username to generate the animation for
           github_user_name: ${{ github.repository_owner }}
           refresh_hours: 1  # Force refresh every hour to get the latest contributions
+          year: 1  # Display contributions from the last 12 months
           # Define the output files and their configurations
           outputs: |
             dist/github-snake.svg
