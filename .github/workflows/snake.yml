@@ -10,6 +10,7 @@ on:
   push:
     branches:
       - main
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -24,6 +25,7 @@ jobs:
         with:
           # GitHub username to generate the animation for
           github_user_name: ${{ github.repository_owner }}
+          refresh_hours: 1  # Force refresh every hour to get the latest contributions
           # Define the output files and their configurations
           outputs: |
             dist/github-snake.svg
